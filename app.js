@@ -41,7 +41,7 @@ function reiniciarJuego() {
 
 function generarNumeroSecreto() {
     let numeroGenerado = Math.floor(Math.random() * numeroMaximo) + 1;
-    if (listaNumerosSorteados.length() == numeroMaximo) {
+    if (listaNumerosSorteados.length == numeroMaximo) {
         asignarTextElemento('p', `Ya se sortearon todos los numeros posibles`);
     } else {
         if (listaNumerosSorteados.includes(numeroGenerado)) {
