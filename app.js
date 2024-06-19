@@ -1,5 +1,5 @@
 let numeroSecreto = 0;
-let intentos = 0;
+let intentos = 1;
 let listaNumerosSorteados = [];
 let numeroMaximo = 10;
 
@@ -58,5 +58,6 @@ function condicionesIniciales() {
     //generar el numero aleatorio
     numeroSecreto = generarNumeroSecreto();
     intentos = 1;
+    console.log(numeroSecreto);
 }
 condicionesIniciales();
